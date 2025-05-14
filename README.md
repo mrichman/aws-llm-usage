@@ -1,6 +1,6 @@
 # AWS LLM Usage
 
-Show which Bedrock LLMs are used across all accounts.
+Show which Bedrock LLMs are used in your account, and their relative consumption.
 
 ## Disclaimer
 
