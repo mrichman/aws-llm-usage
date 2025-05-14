@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-import boto3
-import datetime
 import argparse
-from tabulate import tabulate
+import datetime
+
+import boto3
 from botocore.exceptions import ClientError
+from tabulate import tabulate
 
 
 def get_bedrock_model_usage(region, days=30, detailed=False):
@@ -108,12 +109,9 @@ def main():
 
     args = parser.parse_args()
 
+    ec2_client = boto3.client("ec2")
     bedrock_regions = [
-        "us-east-1",
-        "us-west-2",
-        "ap-northeast-1",
-        "ap-southeast-2",
-        "eu-central-1",
+        region["RegionName"] for region in ec2_client.describe_regions()["Regions"]
     ]
 
     if args.all_regions:

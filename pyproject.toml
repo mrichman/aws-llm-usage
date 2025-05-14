@@ -1,7 +1,7 @@
 [project]
 name = "aws-llm-usage"
 version = "0.1.0"
-description = "Add your description here"
+description = "Show which Bedrock LLMs are used in your account, and their relative consumption."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
