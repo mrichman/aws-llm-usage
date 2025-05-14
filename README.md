@@ -18,7 +18,7 @@ This solution is not an official AWS product and is not covered by AWS Support. 
 
 - AWS CLI installed and configured
 - Python 3.13 or higher
-- uv (Python package installer and environment manager)
+- [uv](https://github.com/astral-sh/uv) (Python package installer and environment manager)
 
 ### Setup
 
